@@ -25,8 +25,8 @@ terraform {
 
 provider "aws" {
   region     = var.aws_region
-  access_key = "AKIA5LVVBPBANJHNJAX6"
-  secret_key = "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"
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
 }
 
 resource "random_string" "random" {
